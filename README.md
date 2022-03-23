@@ -1,5 +1,11 @@
 This is a [Express.js](https://expressjs.com/) project for the alert event client app.
 
+Some key points:
+
+- TypeScript
+- ESLint + Prettier setup
+
+
 Basically app support 2 endpoints:
 
 - /api/events/test
@@ -7,9 +13,9 @@ Basically app support 2 endpoints:
 
 Under the hood, both endpoints are doing same thing - just validate the request and return JSON object.
 
-## Getting Started
+# Getting Started
 
-# Run the development server:
+## Run the development server:
 
 ```bash
 npm run dev
@@ -17,11 +23,11 @@ npm run dev
 yarn dev
 ```
 
-# Run unit test:
+## Run unit test:
 
 ```bash
 npm run test:unit
-# or
+## or
 yarn test:unit
 ```
 
