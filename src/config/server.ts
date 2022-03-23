@@ -6,7 +6,7 @@ import { default as helmet } from 'helmet';
 import eventRoute from 'routes/Event.route';
 import indexRoute from 'routes/Index.route';
 
-export const server = express();
+const server = express();
 
 server
   .use(helmet())
@@ -14,4 +14,6 @@ server
   .use(compression())
   .use(json())
   .use('/', indexRoute)
-  .use('/events', eventRoute);
+  .use('/api/events', eventRoute);
+
+export { server };
